@@ -1,0 +1,30 @@
+>> question3
+ 
+final =
+ 
+[cos(t1), -cos(t2 + t3)*sin(t1), -sin(t2 + t3)*sin(t1), -sin(t1)*(l2*cos(t2 + t3) + l1*cos(t2))]
+[sin(t1),  cos(t2 + t3)*cos(t1),  sin(t2 + t3)*cos(t1),  cos(t1)*(l2*cos(t2 + t3) + l1*cos(t2))]
+[      0,         -sin(t2 + t3),          cos(t2 + t3),       l0 - l2*sin(t2 + t3) - l1*sin(t2)]
+[      0,                     0,                     0,                                       1]
+ 
+ 
+spatial_jacobian =
+ 
+[0,  l0*sin(t1),  sin(t1)*(l0 - l1*sin(t2))]
+[0, -l0*cos(t1), -cos(t1)*(l0 - l1*sin(t2))]
+[0,           0,                 l1*cos(t2)]
+[0,    -cos(t1),                   -cos(t1)]
+[0,    -sin(t1),                   -sin(t1)]
+[1,           0,                          0]
+ 
+ 
+body_jacobian =
+ 
+[- l2*cos(t2 + t3) - l1*cos(t2),                 0,                 0]
+[                             0,        l1*sin(t3),        l1*sin(t3)]
+[                             0, - l2 - l1*cos(t3), - l2 - l1*cos(t3)]
+[                             0,                -1,                -1]
+[                 -sin(t2 + t3),                 0,                 0]
+[                  cos(t2 + t3),                 0,                 0]
+ 
+>> 
