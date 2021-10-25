@@ -5,7 +5,7 @@ syms l0 l1 l2
 % Twist Coordinates
 psi1 = [0;0;0;0;0;1];
 psi2 = [0;-l0;  0 ; -1 ; 0 ;0];
-psi3 = [0;t3;0;0;0;0]; 
+psi3 = [0;1;0;0;0;0]; 
 
 % Transformation matrices ( derived from twist corrdinates s1:e^(psi1
 % theta1)
@@ -59,7 +59,7 @@ i_psi_1 = simplify(inv_adj_s1_s2_s3*psi1);
 i_psi_2 = simplify(inv_adj_s2_s3*psi2);
 i_psi_3 = simplify(inv_adj_s3*psi3);
 
-body_jacobian = [i_psi_1 i_psi_2 i_psi_2]
+body_jacobian = [i_psi_1 i_psi_2 i_psi_3]
 
 
 % Function for calculating the Inverse adjoint transformation matrix corresponding

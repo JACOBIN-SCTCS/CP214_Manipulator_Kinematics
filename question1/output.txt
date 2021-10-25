@@ -20,11 +20,11 @@ spatial_jacobian =
  
 body_jacobian =
  
-[-l1*cos(t2)*cos(t3),  l1*sin(t3),  l1*sin(t3)]
-[                  0,           0,           0]
-[-l1*cos(t2)*sin(t3), -l1*cos(t3), -l1*cos(t3)]
-[   -cos(t2)*sin(t3),    -cos(t3),    -cos(t3)]
-[           -sin(t2),           0,           0]
-[    cos(t2)*cos(t3),    -sin(t3),    -sin(t3)]
+[-l1*cos(t2)*cos(t3),  l1*sin(t3), 0]
+[                  0,           0, 0]
+[-l1*cos(t2)*sin(t3), -l1*cos(t3), 0]
+[   -cos(t2)*sin(t3),    -cos(t3), 0]
+[           -sin(t2),           0, 1]
+[    cos(t2)*cos(t3),    -sin(t3), 0]
  
 >> 

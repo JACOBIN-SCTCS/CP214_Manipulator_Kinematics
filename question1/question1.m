@@ -56,7 +56,7 @@ i_psi_1 = simplify(inv_adj_s1_s2_s3*psi1);
 i_psi_2 = simplify(inv_adj_s2_s3*psi2);
 i_psi_3 = simplify(inv_adj_s3*psi3);
 
-body_jacobian = [i_psi_1 i_psi_2 i_psi_2]
+body_jacobian = [i_psi_1 i_psi_2 i_psi_3]
 
 
 % Function for calculating the Inverse adjoint transformation matrix corresponding
